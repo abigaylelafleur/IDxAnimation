@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML + CSS</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <div class="nav">
@@ -13,14 +14,14 @@
       <a>Browse Stock</a>
     </div>
     <div class="hero">
-      <button data-close-button class="close-button">&times;</button>
       <h1>Your Next Adventure Awaits!</h1>
-      <a data-modal-target="#modal">Shop Now</a>
+      <button data-modal-target="#modal">Shop Now</button>
       <div class="books">
         photos 
       </div>
     </div>
-    <div class="pop-up">
+    <div class="modal" id="modal">
+      <button data-close-button class="close-button">&times;</button>
       <h2>Spin The Wheel For a Mystery Deal</h2>
       <p>Win Up to 30% Off</p>
     </div>
