@@ -1,7 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url("reset.css");
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carousel {
+  width: 144rem;
+  margin-top: 7.5rem;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.click {
+  display: flex;
+  justify-content: center;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  animation: scroll 15s infinite linear;
+  padding-right: 4rem;
+}
+
+.book {
+  flex: 0 0 5rem;
+}
+
+h1 {
+  font-family: 'young serif';
+  font-size: 8.6rem;
+  color: #BE94B1;
+  text-shadow: 3px 3px 0px #3A3238;
+  width: 122.6rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 12rem;
+}
+
+.hero {
+  background-color: #FFF8EF;
+}
+
+.hero button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  width: 21.5rem;
+  border: none;
+  background-color: #BE94B1;
+  color: #3A3238;
+  font-family: 'young serif';
+  font-size: 3rem;
+  padding: 15px 30px;
+  border-radius: 2rem;
+}
+
+.hero .wave {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
+}
+
+.nav {
+  background-color: #BE94B1;
+  padding: 31px 91px 31px 103px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.nav a {
+  font-family: 'young serif';
+  font-size: 1.6rem;
+  color: #3A3238;
+  padding: 15px 20px;
+  background-color: #FFF8EF;
+  border-radius: 2.0rem;
+}
+
+.nav .box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .modal {
@@ -10,13 +109,24 @@
   left: 50%;
   transform: translate(-50%,-50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid black;
+  border: none;
   border-radius: 10px;
   z-index: 10;
-  background-color: white;
-  width: 500px;
+  background-image: url(images/bookbg.png);
+  background-size: contain;
+  width: 69.5rem;
+  height: 55rem;
   max-width: 80%;
   padding: 10px 15px;
+}
+
+.modal a {
+  font-family: 'young serif';
+  font-size: 2.4rem;
+  color: #FFF8EF;
+  padding: 20px 30px;
+  background-color: #3A3238;
+  border-radius: 2.0rem;
 }
 
 .modal.active {
@@ -24,8 +134,14 @@
 }
 
 .modal h2 {
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-family: 'young serif';
+  font-size: 5.2rem;
+  color: #3A3238;
+  width: 49rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10rem;
 }
 
 .modal .close-button {
@@ -35,6 +151,11 @@
   background: none;
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+.modal .glowbutton {
+  display: flex;
+  justify-content: center;
 }
 
 #overlay {
@@ -52,4 +173,21 @@
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+p {
+    font-family: 'young serif';
+    font-size: 2.4rem;
+    color: #3A3238;
+    width: 22.1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4.5rem;
+    padding-bottom: 6rem;
+}
+
+@keyframes scroll {
+    from {translate: 0;}
+    to {translate: -100%;}
 }

@@ -10,20 +10,47 @@
   </head>
   <body>
     <div class="nav">
-      <img src="logo.png"/> 
-      <a>Browse Stock</a>
+      <div class="box">
+        <img src="images/logo.png"/> 
+        <a>Browse Stock</a>
+      </div>
     </div>
     <div class="hero">
-      <h1>Your Next Adventure Awaits!</h1>
-      <button data-modal-target="#modal">Shop Now</button>
-      <div class="books">
-        photos 
+      <h1>Your Next Adventure Awaits</h1>
+      <div class="click">
+        <button data-modal-target="#modal">Shop Now</button>
+      </div>
+      <img class="wave" src="images/wave.png"/>
+      <div class="carousel">
+        <div class="group">
+          <div class="book"><img src="images/book-1.png"/></div>
+          <div class="book"><img src="images/book-2.png"/></div>
+          <div class="book"><img src="images/book-3.png"/></div>
+          <div class="book"><img src="images/book-4.png"/></div>
+          <div class="book"><img src="images/book-5.png"/></div>
+          <div class="book"><img src="images/book-6.png"/></div>
+          <div class="book"><img src="images/book-7.png"/></div>
+          <div class="book"><img src="images/book-8.png"/></div>
+        </div>
+        <div aria-hidden="true" class="group">
+          <div class="book"><img src="images/book-1.png"/></div>
+          <div class="book"><img src="images/book-2.png"/></div>
+          <div class="book"><img src="images/book-3.png"/></div>
+          <div class="book"><img src="images/book-4.png"/></div>
+          <div class="book"><img src="images/book-5.png"/></div>
+          <div class="book"><img src="images/book-6.png"/></div>
+          <div class="book"><img src="images/book-7.png"/></div>
+          <div class="book"><img src="images/book-8.png"/></div>
+        </div>
       </div>
     </div>
     <div class="modal" id="modal">
       <button data-close-button class="close-button">&times;</button>
       <h2>Spin The Wheel For a Mystery Deal</h2>
       <p>Win Up to 30% Off</p>
+      <div class="glowbutton">
+        <a>Play Now</a>
+      </div>
     </div>
     <div id="overlay"></div>
   </body>
