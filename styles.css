@@ -38,6 +38,30 @@ a {
   flex: 0 0 5rem;
 }
 
+.glowbutton .glowmask {
+  position: absolute;
+  top: 66%;
+  left: 37%;
+  border-radius: 20px;
+  width: 26%;
+  height: 13%;
+  padding: 5px;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0) border-box;
+  mask-composite: exclude;
+}
+
+.glowbutton .glowborder {
+    background: conic-gradient(from 0deg, transparent 0%, #D375B4 10%, transparent 20%);
+    position: absolute;
+    top: 72.5%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    transform-origin: 0 0;
+    animation: rotateGlow 2s linear infinite;
+}
+
 h1 {
   font-family: 'young serif';
   font-size: 8.6rem;
@@ -143,15 +167,18 @@ html {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10rem;
+  padding-top: 2rem;
 }
 
 .modal .close-button {
+  color: #3A3238;
+  margin-left: 58rem;
+  padding-top: 3rem;
   cursor: pointer;
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
+  font-size: 6rem;
   font-weight: bold;
 }
 
@@ -193,3 +220,12 @@ p {
     from {translate: 0;}
     to {translate: -100%;}
 }
+
+@keyframes rotateGlow {
+  0% { 
+      transform: rotate(0deg) translate(-50%, -50%);
+  }
+  100% { 
+      transform: rotate(360deg) translate(-50%, -50%);
+  }
+} 
